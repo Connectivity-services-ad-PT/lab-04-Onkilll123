@@ -37,11 +37,14 @@ jobs:
             --env-file .env.example \
             fit4110/access-gate:lab04
 
-      - name: Wait for service (TCP port check)
-        run: npx wait-on tcp:8000 --timeout 30000
+      - name: Wait for service ready
+        run: npx wait-on http://localhost:8000/health --timeout 30000
 
       - name: Health check
-        run: curl -s http://localhost:8000/health
+        run: |
+          curl -sf http://localhost:8000/health
+          echo ""
+          echo "Health check passed!"
 
       - name: Run Newman against Docker container
         run: npm run test:local
