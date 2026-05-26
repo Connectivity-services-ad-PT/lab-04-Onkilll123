@@ -1,78 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="FIT4110 Lab04 — Access Gate Docker" tests="19" time="0.171">
-  <testsuite name="01_Functional / TC01 — Health check" id="5b738f20-62de-4a36-b9b3-86a2e3489963" timestamp="2026-05-26T09:27:00.309Z" tests="3" failures="0" errors="0" time="0.048">
-    <testcase name="Status code is 200" time="0.048" classname="01FunctionalTc01HealthCheck"/>
-    <testcase name="Response has status=ok" time="0.048" classname="01FunctionalTc01HealthCheck"/>
-    <testcase name="Response has version field" time="0.048" classname="01FunctionalTc01HealthCheck"/>
+<testsuites name="FIT4110 Lab04 — Access Gate Docker" tests="19" time="0.146">
+  <testsuite name="01_Functional / TC01 — Health check" id="f958ccfc-7fc5-4751-9ea2-ab3b3dedc51f" timestamp="2026-05-26T09:30:47.418Z" tests="3" failures="0" errors="0" time="0.047">
+    <testcase name="Status code is 200" time="0.047" classname="01FunctionalTc01HealthCheck"/>
+    <testcase name="Response has status=ok" time="0.047" classname="01FunctionalTc01HealthCheck"/>
+    <testcase name="Response has version field" time="0.047" classname="01FunctionalTc01HealthCheck"/>
   </testsuite>
-  <testsuite name="01_Functional / TC02 — Create access event (happy path — accepted)" id="e73f1791-dbdc-4dd1-b1ea-14281dc228b1" timestamp="2026-05-26T09:27:00.309Z" tests="4" failures="0" errors="0" time="0.012">
-    <testcase name="Status code is 201" time="0.012" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
-    <testcase name="Response has event_id" time="0.012" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
-    <testcase name="Result is accepted for active card" time="0.012" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
-    <testcase name="Direction is correct" time="0.012" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
+  <testsuite name="01_Functional / TC02 — Create access event (happy path — accepted)" id="725675b0-ef7e-4796-afe9-3696deb7f827" timestamp="2026-05-26T09:30:47.418Z" tests="4" failures="0" errors="0" time="0.011">
+    <testcase name="Status code is 201" time="0.011" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
+    <testcase name="Response has event_id" time="0.011" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
+    <testcase name="Result is accepted for active card" time="0.011" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
+    <testcase name="Direction is correct" time="0.011" classname="01FunctionalTc02CreateAccessEventHappyPathAccepted"/>
   </testsuite>
-  <testsuite name="01_Functional / TC03 — Create access event (exit — out direction)" id="213507bd-14e8-486c-96ac-b31b2da7728e" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.008">
-    <testcase name="Status code is 201" time="0.008" classname="01FunctionalTc03CreateAccessEventExitOutDirection"/>
-    <testcase name="Direction is out" time="0.008" classname="01FunctionalTc03CreateAccessEventExitOutDirection"/>
+  <testsuite name="01_Functional / TC03 — Create access event (exit — out direction)" id="84ee573e-2fe8-4797-b970-d34ba0c03ece" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.006">
+    <testcase name="Status code is 201" time="0.006" classname="01FunctionalTc03CreateAccessEventExitOutDirection"/>
+    <testcase name="Direction is out" time="0.006" classname="01FunctionalTc03CreateAccessEventExitOutDirection"/>
   </testsuite>
-  <testsuite name="01_Functional / TC04 — Get access events list" id="9563ed33-d321-4e72-a202-f84571498ca7" timestamp="2026-05-26T09:27:00.309Z" tests="3" failures="0" errors="0" time="0.006">
+  <testsuite name="01_Functional / TC04 — Get access events list" id="8186974c-9f20-40f3-bd4a-73b0f80b823c" timestamp="2026-05-26T09:30:47.418Z" tests="3" failures="0" errors="0" time="0.006">
     <testcase name="Status code is 200" time="0.006" classname="01FunctionalTc04GetAccessEventsList"/>
     <testcase name="Response has items array" time="0.006" classname="01FunctionalTc04GetAccessEventsList"/>
     <testcase name="Response has total count" time="0.006" classname="01FunctionalTc04GetAccessEventsList"/>
   </testsuite>
-  <testsuite name="01_Functional / TC05 — Get card by ID (active card)" id="aafd5448-a81a-4460-a553-e969f8d0a383" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.006">
+  <testsuite name="01_Functional / TC05 — Get card by ID (active card)" id="ab80799f-0181-4a88-b839-c135bdaea12d" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.006">
     <testcase name="Status code is 200" time="0.006" classname="01FunctionalTc05GetCardByIdActiveCard"/>
     <testcase name="Card has required fields" time="0.006" classname="01FunctionalTc05GetCardByIdActiveCard"/>
   </testsuite>
-  <testsuite name="01_Functional / TC06 — Create card (new card)" id="3dddf6fa-74fe-47e3-ae8e-68983223fcbc" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.010">
-    <testcase name="Status code is 201" time="0.010" classname="01FunctionalTc06CreateCardNewCard"/>
-    <testcase name="New card has card_id and active status" time="0.010" classname="01FunctionalTc06CreateCardNewCard"/>
+  <testsuite name="01_Functional / TC06 — Create card (new card)" id="f8b18518-3f3c-4f0d-97f6-c2da7d811716" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.008">
+    <testcase name="Status code is 201" time="0.008" classname="01FunctionalTc06CreateCardNewCard"/>
+    <testcase name="New card has card_id and active status" time="0.008" classname="01FunctionalTc06CreateCardNewCard"/>
   </testsuite>
-  <testsuite name="02_Auth / TC07 — Missing token returns 401" id="d8aa6039-1280-447a-9ff5-ab525fbb7968" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.008">
-    <testcase name="Missing token returns 401" time="0.008" classname="02AuthTc07MissingTokenReturns401"/>
-    <testcase name="Error follows ProblemDetails" time="0.008" classname="02AuthTc07MissingTokenReturns401"/>
+  <testsuite name="02_Auth / TC07 — Missing token returns 401" id="d2ea0cdb-71d1-4ae9-ab60-29411e8f83ce" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.004">
+    <testcase name="Missing token returns 401" time="0.004" classname="02AuthTc07MissingTokenReturns401"/>
+    <testcase name="Error follows ProblemDetails" time="0.004" classname="02AuthTc07MissingTokenReturns401"/>
   </testsuite>
-  <testsuite name="02_Auth / TC08 — Invalid token returns 401" id="4b9883fe-2757-43b8-9641-bade93aa9873" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.006">
-    <testcase name="Invalid token returns 401 on local service" time="0.006" classname="02AuthTc08InvalidTokenReturns401"/>
-    <testcase name="ProblemDetails has type field" time="0.006" classname="02AuthTc08InvalidTokenReturns401"/>
+  <testsuite name="02_Auth / TC08 — Invalid token returns 401" id="5a15c0a3-ea87-461f-9f3a-c78f7ad9536d" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.007">
+    <testcase name="Invalid token returns 401 on local service" time="0.007" classname="02AuthTc08InvalidTokenReturns401"/>
+    <testcase name="ProblemDetails has type field" time="0.007" classname="02AuthTc08InvalidTokenReturns401"/>
   </testsuite>
-  <testsuite name="02_Auth / TC09 — Auth required on GET /access-events" id="6c5edbc5-5baa-48ce-a917-10f7af984bb1" timestamp="2026-05-26T09:27:00.309Z" tests="1" failures="0" errors="0" time="0.008">
-    <testcase name="GET /access-events requires auth" time="0.008" classname="02AuthTc09AuthRequiredOnGetAccessEvents"/>
+  <testsuite name="02_Auth / TC09 — Auth required on GET /access-events" id="40bbea27-bb1c-4cca-8c2d-4b69384928ae" timestamp="2026-05-26T09:30:47.418Z" tests="1" failures="0" errors="0" time="0.006">
+    <testcase name="GET /access-events requires auth" time="0.006" classname="02AuthTc09AuthRequiredOnGetAccessEvents"/>
   </testsuite>
-  <testsuite name="03_Negative / TC10 — Missing card_id returns 422" id="f5f23a64-e92d-4581-aeac-5061e3d8e847" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.008">
-    <testcase name="Missing card_id returns client error" time="0.008" classname="03NegativeTc10MissingCardIdReturns422"/>
-    <testcase name="Error follows ProblemDetails schema" time="0.008" classname="03NegativeTc10MissingCardIdReturns422"/>
+  <testsuite name="03_Negative / TC10 — Missing card_id returns 422" id="d3a99887-2bcc-48e3-aa27-1aa3b7077fc5" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.007">
+    <testcase name="Missing card_id returns client error" time="0.007" classname="03NegativeTc10MissingCardIdReturns422"/>
+    <testcase name="Error follows ProblemDetails schema" time="0.007" classname="03NegativeTc10MissingCardIdReturns422"/>
   </testsuite>
-  <testsuite name="03_Negative / TC11 — Invalid direction returns 422" id="de46df6b-b637-4d65-ae6b-4535603e1eb5" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.007">
-    <testcase name="Invalid direction returns client error" time="0.007" classname="03NegativeTc11InvalidDirectionReturns422"/>
-    <testcase name="Error has detail message" time="0.007" classname="03NegativeTc11InvalidDirectionReturns422"/>
+  <testsuite name="03_Negative / TC11 — Invalid direction returns 422" id="7b58725f-d346-4fe4-a1d7-92889bb4bd86" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.005">
+    <testcase name="Invalid direction returns client error" time="0.005" classname="03NegativeTc11InvalidDirectionReturns422"/>
+    <testcase name="Error has detail message" time="0.005" classname="03NegativeTc11InvalidDirectionReturns422"/>
   </testsuite>
-  <testsuite name="03_Negative / TC12 — Card not found returns 404" id="bc5f67fc-8fb8-4b2d-83c5-c6c292af98d5" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.006">
-    <testcase name="Non-existent card returns 404 on local service" time="0.006" classname="03NegativeTc12CardNotFoundReturns404"/>
-    <testcase name="ProblemDetails status is 404" time="0.006" classname="03NegativeTc12CardNotFoundReturns404"/>
+  <testsuite name="03_Negative / TC12 — Card not found returns 404" id="ff21973d-2781-415d-88cb-c52e2f364504" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.004">
+    <testcase name="Non-existent card returns 404 on local service" time="0.004" classname="03NegativeTc12CardNotFoundReturns404"/>
+    <testcase name="ProblemDetails status is 404" time="0.004" classname="03NegativeTc12CardNotFoundReturns404"/>
   </testsuite>
-  <testsuite name="04_Boundary / TC13 — Empty card_id is rejected" id="5669f95e-03d9-4ae1-988c-eb668249cba1" timestamp="2026-05-26T09:27:00.309Z" tests="1" failures="0" errors="0" time="0.004">
-    <testcase name="Empty card_id is rejected or handled" time="0.004" classname="04BoundaryTc13EmptyCardIdIsRejected"/>
+  <testsuite name="04_Boundary / TC13 — Empty card_id is rejected" id="63e981bf-99e5-40ab-b5cc-ddbba89621e4" timestamp="2026-05-26T09:30:47.418Z" tests="1" failures="0" errors="0" time="0.005">
+    <testcase name="Empty card_id is rejected or handled" time="0.005" classname="04BoundaryTc13EmptyCardIdIsRejected"/>
   </testsuite>
-  <testsuite name="04_Boundary / TC14 — Limit=100 (max boundary) accepted" id="a30f4828-816d-4183-a0dd-e2401d06db7e" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.007">
-    <testcase name="Limit=100 returns 200" time="0.007" classname="04BoundaryTc14Limit100MaxBoundaryAccepted"/>
-    <testcase name="Items array has at most 100 entries" time="0.007" classname="04BoundaryTc14Limit100MaxBoundaryAccepted"/>
+  <testsuite name="04_Boundary / TC14 — Limit=100 (max boundary) accepted" id="2da81b8b-e6a3-45b2-be9e-614b79c2d6ba" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.004">
+    <testcase name="Limit=100 returns 200" time="0.004" classname="04BoundaryTc14Limit100MaxBoundaryAccepted"/>
+    <testcase name="Items array has at most 100 entries" time="0.004" classname="04BoundaryTc14Limit100MaxBoundaryAccepted"/>
   </testsuite>
-  <testsuite name="04_Boundary / TC15 — Limit=200 (over max) is handled" id="a8dfbdaa-c5b9-4524-82dc-2eb6fa702f38" timestamp="2026-05-26T09:27:00.309Z" tests="1" failures="0" errors="0" time="0.005">
+  <testsuite name="04_Boundary / TC15 — Limit=200 (over max) is handled" id="c2a428c1-9059-4236-b2d3-dda9e32f7320" timestamp="2026-05-26T09:30:47.418Z" tests="1" failures="0" errors="0" time="0.005">
     <testcase name="Limit exceeding max is handled gracefully" time="0.005" classname="04BoundaryTc15Limit200OverMaxIsHandled"/>
   </testsuite>
-  <testsuite name="04_Boundary / TC16 — Expired card is denied" id="d0568b5d-268f-4284-9c84-ab5be1ff724f" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.005">
-    <testcase name="Expired card swipe is recorded (201)" time="0.005" classname="04BoundaryTc16ExpiredCardIsDenied"/>
-    <testcase name="Expired card result is denied (local only)" time="0.005" classname="04BoundaryTc16ExpiredCardIsDenied"/>
+  <testsuite name="04_Boundary / TC16 — Expired card is denied" id="a0348e21-aced-420d-b217-25f47b0f4dae" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.006">
+    <testcase name="Expired card swipe is recorded (201)" time="0.006" classname="04BoundaryTc16ExpiredCardIsDenied"/>
+    <testcase name="Expired card result is denied (local only)" time="0.006" classname="04BoundaryTc16ExpiredCardIsDenied"/>
   </testsuite>
-  <testsuite name="05_ProblemDetails_Schema / TC17 — 401 error has ProblemDetails type field (URI)" id="49141dbd-5725-46c0-aaf1-22af10997053" timestamp="2026-05-26T09:27:00.309Z" tests="2" failures="0" errors="0" time="0.005">
-    <testcase name="Error response has all ProblemDetails fields" time="0.005" classname="05ProblemDetailsSchemaTc17401ErrorHasProblemDetailsTypeFieldUri"/>
-    <testcase name="ProblemDetails status matches HTTP status" time="0.005" classname="05ProblemDetailsSchemaTc17401ErrorHasProblemDetailsTypeFieldUri"/>
+  <testsuite name="05_ProblemDetails_Schema / TC17 — 401 error has ProblemDetails type field (URI)" id="aa5235b0-b27a-44cb-ab01-bc7c7e5248ab" timestamp="2026-05-26T09:30:47.418Z" tests="2" failures="0" errors="0" time="0.003">
+    <testcase name="Error response has all ProblemDetails fields" time="0.003" classname="05ProblemDetailsSchemaTc17401ErrorHasProblemDetailsTypeFieldUri"/>
+    <testcase name="ProblemDetails status matches HTTP status" time="0.003" classname="05ProblemDetailsSchemaTc17401ErrorHasProblemDetailsTypeFieldUri"/>
   </testsuite>
-  <testsuite name="05_ProblemDetails_Schema / TC18 — 422 error has ProblemDetails format" id="97737af1-56b2-495f-89b0-44aa1d467d18" timestamp="2026-05-26T09:27:00.309Z" tests="1" failures="0" errors="0" time="0.006">
-    <testcase name="422 error has ProblemDetails" time="0.006" classname="05ProblemDetailsSchemaTc18422ErrorHasProblemDetailsFormat"/>
+  <testsuite name="05_ProblemDetails_Schema / TC18 — 422 error has ProblemDetails format" id="c81d317f-a9c4-41fa-ab17-d06a6e18668e" timestamp="2026-05-26T09:30:47.418Z" tests="1" failures="0" errors="0" time="0.003">
+    <testcase name="422 error has ProblemDetails" time="0.003" classname="05ProblemDetailsSchemaTc18422ErrorHasProblemDetailsFormat"/>
   </testsuite>
-  <testsuite name="06_NonFunctional / TC19 — Response time under 1000ms" id="994d1b53-1077-4621-987d-19ce4b6334fa" timestamp="2026-05-26T09:27:00.309Z" tests="1" failures="0" errors="0" time="0.006">
-    <testcase name="Response time is below 1000ms (Docker container)" time="0.006" classname="06NonFunctionalTc19ResponseTimeUnder1000Ms"/>
+  <testsuite name="06_NonFunctional / TC19 — Response time under 1000ms" id="2aa18612-a06c-43f3-8c59-effc92b49d6e" timestamp="2026-05-26T09:30:47.418Z" tests="1" failures="0" errors="0" time="0.003">
+    <testcase name="Response time is below 1000ms (Docker container)" time="0.003" classname="06NonFunctionalTc19ResponseTimeUnder1000Ms"/>
   </testsuite>
 </testsuites>
