@@ -36,9 +36,14 @@ jobs:
             -p 8000:8000 \
             --env-file .env.example \
             fit4110/access-gate:lab04
+          sleep 3
+          echo "=== Container startup logs ==="
+          docker logs fit4110-gate-lab04 || true
+          echo "=== Container status ==="
+          docker ps -a --filter "name=fit4110-gate-lab04"
 
       - name: Wait for service ready
-        run: npx wait-on http://localhost:8000/health --timeout 30000
+        run: npx wait-on http://localhost:8000/health --timeout 60000
 
       - name: Health check
         run: |
